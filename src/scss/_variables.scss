@@ -1,0 +1,26 @@
+$colores: (
+    "color-principal": #FFC562,
+    "color-secundario": #4f1762e0,
+    "color-background": #363636,
+    "color-hover": #4f1762,
+    "color-titles": #f8b238,
+    "color-cancel-hover": #FFC562,
+    "color-input": #ffd284,
+    "color-modal": #ffc56267
+    );
+
+@mixin radius($radius,$padding){
+    border-radius: $radius;
+    padding: $padding;
+};
+
+@mixin container-style($bg-color, $shadow) {
+    background-color: $bg-color;
+    border: 1px solid map-get($colores, color-hover);
+    box-shadow: $shadow;
+};
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
