@@ -104,3 +104,24 @@
 .blur {
   filter: blur(5px);
 }
+
+@media screen and (max-width: 769px){
+  body {
+    width: 90%;
+  }
+  .tasks-container {
+    width: 100%;
+    @include radius(10px, (1rem 10px));
+    &__task {
+      padding: 10px;
+      justify-content: space-between;
+    }
+    &__form__input-task {
+      margin: 0 10px 0 0;
+      padding: 5px 0 5px 5px;
+    }
+  }
+  .button__action {
+    margin-right: 5px;
+  }
+}

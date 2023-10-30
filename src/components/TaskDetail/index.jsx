@@ -6,7 +6,7 @@ const TaskDetail = ({ task }) => {
 			<h1>{task.task}</h1>
 			<h3>
 				Complete:
-				<span>{task.complete ? 'Tarea Realizada' : 'Tarea sin realizar'}</span>
+				<p>{task.complete ? 'Tarea Realizada' : 'Tarea sin realizar'}</p>
 			</h3>
 		</>
 	);
